@@ -1,4 +1,5 @@
 @import url("fontawesome-all.min.css");
+@import url("academicons.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
 /*
@@ -84,7 +85,6 @@ input, select, textarea {
 
 	body {
 		background: #252122;
-		background-image: url("images/bg02.png");
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1590,6 +1590,7 @@ input, select, textarea {
 		.box.post h2 {
 			font-size: 2.5em;
 			letter-spacing: -0.015em;
+			line-height: 105%;
 		}
 
 		.box.post header > p {
@@ -1895,7 +1896,7 @@ input, select, textarea {
 		padding-left: 0;
 		overflow: hidden;
 		cursor: default;
-		margin: 0 0 3.25em 0;
+		margin: 0 0 1em 0;
 	}
 
 		ul.social li {
@@ -1936,12 +1937,27 @@ input, select, textarea {
 					}
 
 				ul.social li a.fa-twitter {
-					background: #2daae4;
+					background: #1DA1F2;
 				}
 
 					ul.social li a.fa-twitter:hover {
-						background: #3dbaf4;
+						background: #77C7F7;
 					}
+
+					ul.social li a.fa-twitter-square {
+						background: #1DA1F2;
+					}
+
+						ul.social li a.fa-twitter-square:hover {
+							background: #77C7F7;
+						}
+					ul.social li a.fa-researchgate {
+						background: #00ccbb;
+					}
+
+						ul.social li a.fa-researchgate:hover {
+							background: #95d4ce;
+						}
 
 				ul.social li a.fa-dribbble {
 					background: #c4376b;
@@ -1952,11 +1968,19 @@ input, select, textarea {
 					}
 
 				ul.social li a.fa-linkedin {
-					background: #006599;
+					background: #2867B2;
 				}
 
 					ul.social li a.fa-linkedin:hover {
-						background: #1075a9;
+						background: #7EA4D1;
+					}
+
+				ul.social li a.fa-linkedin-in {
+						background: #2867B2;
+				}
+
+					ul.social li a.fa-linkedin-in:hover {
+							background: #7EA4D1;
 					}
 
 				ul.social li a.fa-tumblr {
@@ -1975,6 +1999,37 @@ input, select, textarea {
 						background: #ea3723;
 					}
 
+					ul.social li a.ai-google-scholar {
+						background: #4285F4;
+					}
+
+						ul.social li a.ai-google-scholar:hover {
+							background: #8EB6F8;
+						}
+
+					ul.social li a.ai-google-scholar-square {
+						background: #4285F4;
+					}
+
+						ul.social li a.ai-google-scholar-square:hover {
+							background: #8EB6F8;
+						}
+
+					ul.social li a.ai-orcid {
+						background: #A5CE3A;
+					}
+
+						ul.social li a.ai-orcid:hover {
+							background: #C7DF89;
+						}
+
+					ul.social li a.ai-orcid-square {
+						background: #A5CE3A;
+					}
+
+						ul.social li a.ai-orcid-square:hover {
+							background: #C7DF89;
+						}
 /* Icons */
 
 	.icon {
@@ -1992,7 +2047,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: 'Font Awesome 5 Free', 'Academicons';
 			font-weight: 400;
 		}
 
@@ -2001,7 +2056,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'Font Awesome 5 Brands', 'Academicons';
 		}
 
 		.icon:before {
@@ -2055,7 +2110,6 @@ input, select, textarea {
 				.icon.featured.alt2:after {
 					border-top-color: #827a7c;
 				}
-
 /* Page Wrapper */
 
 	#page-wrapper > section {
@@ -2075,8 +2129,8 @@ input, select, textarea {
 		#header h1 {
 			color: #252122;
 			font-weight: 900;
-			font-size: 2.5em;
-			letter-spacing: -0.035em;
+			font-size: 3.5em;
+			letter-spacing: -0.01em; /* -0.035*/
 			line-height: 1;
 		}
 
@@ -2266,7 +2320,7 @@ input, select, textarea {
 
 	#main {
 		position: relative;
-		background: #f7f7f7 url("images/bg02.png");
+		background: #f7f7f7;
 		padding: 4em 0 4em 0;
 	}
 
@@ -2276,14 +2330,13 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: url("images/bg01.png");
 			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.1;
 		}
 
 		#main .major h2 {
-			background: #f7f7f7 url("images/bg02.png");
+			background: #f7f7f7;
 		}
 
 /* Footer */
@@ -2291,7 +2344,7 @@ input, select, textarea {
 	#footer {
 		position: relative;
 		color: #858484;
-		padding: 4em 0;
+		padding: 3em 0;
 	}
 
 		#footer:before {
@@ -2300,7 +2353,6 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: url("images/bg01.png");
 			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.5;
@@ -2631,7 +2683,6 @@ input, select, textarea {
 				width: 275px;
 				z-index: 10002;
 				color: #858484;
-				background-image: url("images/bg02.png");
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 			}
 
